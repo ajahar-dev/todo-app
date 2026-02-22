@@ -12,58 +12,69 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #153677, #4e085f )
 }
 
 .container {
     width: 400px;
+    margin: 0 10px;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid black; */
     border-radius: 20px;
     padding: 10px;
-    box-shadow: 0 0 20px rgb(203, 200, 200);
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "", sans-serif;
+    padding: 15px 7px;
+    width: 100%;
+    color: rgb(2, 2, 2);
+    font-size: 1.5rem;
 }
 
 .box {
-    border: 2px solid rgb(206, 206, 206);
-    border-radius: 20px;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 25px;
     width: 100%;
     min-height: 40px;
     display: flex;
     justify-content: center;
+    background-color: rgba(234, 234, 234, 0.719);
 }
 
 #mainInput {
     width: 100%;
     border: none;
-    border-radius: 20px;
-    min-height: 40px;
+    border-radius: 25px;
+    min-height: 45px;
     text-align: left;
     padding-left: 15px;
     font-family: "Open Sans", sans-serif;
-    font-size: larger;
+    font-size: 1rem;
+    background-color: rgba(234, 234, 234, 0.719);
 }
 
 #mainButton {
     border: none;
-    width: 25%;
-    height: 40px;
+    width: 130px;
+    height: 45px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: rgb(255, 111, 21);
     color: white;
     box-shadow: 0px 0px 20px grey;
     cursor: pointer;
 }
 
-input:focus {
+#mainInput:focus {
     outline: none;
     border: none;        /* if border is changing */
     box-shadow: none;    /* if shadow is appearing */
@@ -72,31 +83,30 @@ input:focus {
 #list {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 li {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    width: 100%;
-    min-height: 20px;
-    border: 2px solid black;
+    gap: 12px;
+    padding: 10px 0;
 }
+
+li span {
+    flex: 1;
+    text-align: left;
+}
+
 
 span {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: large;
-    font-weight: 600;
+    font-size: medium;
+    text-align: center;
 }
 
-#delete {
+.delete {
     width: 20px;
     height: 20px;
     display: flex;
@@ -104,6 +114,43 @@ span {
     align-items: center;
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+.checkbox {
+    border: 2px solid #ff6f15;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+}
+
+.checkbox::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transition: transform .15s ease-in-out;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.checkbox:checked {
+    background: #ff6f15;
+    border-color: #ff6f15;
+}
+
+.checkbox:checked::before {
+    transform: scale(1);
+}
+
+.checkbox:focus {
+    outline: none;
+    border: 2px solid #ff6f15;
 }
 
 

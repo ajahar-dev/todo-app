@@ -19,14 +19,14 @@ function addTodo()
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.id = "checkbox";
+    checkbox.className = "checkbox";
 
     const span = document.createElement("span")
     span.textContent = text;
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.id = "delete";
-    deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>`;
+    deleteBtn.className = "delete";
+    deleteBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(70, 70, 70)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>`;
     deleteBtn.addEventListener("click", () => {
         li.remove();
     });
