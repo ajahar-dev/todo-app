@@ -71,10 +71,11 @@ Todo-App/
 
 ## 📸 Preview
 <img width="300" height="400" alt="Screenshot 2026-02-23 155626" src="https://github.com/user-attachments/assets/09102335-2e2a-4974-a4ea-9d461dcf2d04" />
+
 ---
 
 ## 📌 Live Demo
-
+https://ajahar-dev.github.io/todo-app/
 
 ---
 
