@@ -75,7 +75,7 @@ Todo-App/
 ---
 
 ## 📌 Live Demo
-https://ajahar-dev.github.io/todo-app/
+
 
 ---
 
